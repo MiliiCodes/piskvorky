@@ -23,7 +23,8 @@
   flex-direction: column;
   position: absolute;
   top: 50px;
-  width: 40%;
+  max-width: 40%;
+  max-height: 70%;
   background-color: #283e50;
 }
 
