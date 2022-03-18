@@ -1,0 +1,70 @@
+*,
+:after,
+:before {
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: heading;
+  src: url(Lobster-Regular.ttf);
+}
+
+.container {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  min-height: 100%;
+  background: linear-gradient(#615dad 50%, #ffc8da);
+  background-attachment: fixed;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 50px;
+  width: 40%;
+  background-color: #283e50;
+}
+.content--image {
+  width: 20px;
+}
+.content--text {
+  text-align: center;
+  color: #ffffff;
+  padding: 0 30px 30px;
+}
+h1 {
+  font-family: heading;
+  font-size: 40px;
+}
+p {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.content--buttons {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.content--button__green {
+  padding: 20px 0;
+  margin-top: 2px;
+  background-color: #1fcca4;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.content--button__green:hover {
+  background-color: #1cbb96;
+}
+
+.content--button__blue {
+  padding: 20px 0;
+  margin-top: 2px;
+  background-color: #0197f6;
+  color: #ffffff;
+  text-decoration: none;
+}
+.content--button__blue:hover {
+  background-color: #0090e9;
+}
