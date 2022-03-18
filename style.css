@@ -2,6 +2,7 @@
 :after,
 :before {
   box-sizing: border-box;
+  margin: 0;
 }
 
 @font-face {
@@ -25,16 +26,19 @@
   top: 50px;
   max-width: 40%;
   background-color: #283e50;
+  border-radius: 10px 10px 0 0;
 }
 
 .content--image img {
   max-width: 100%;
+  border-radius: 10px 10px 0 0;
 }
 
 .content--text {
   text-align: center;
   color: #ffffff;
   padding: 0 30px 30px;
+  flex-basis: 250px;
 }
 
 .content--buttons {
@@ -71,6 +75,7 @@
 h1 {
   font-family: heading;
   font-size: 40px;
+  padding: 30px 0;
 }
 
 p {
