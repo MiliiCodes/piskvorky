@@ -3,6 +3,7 @@
 :before {
   box-sizing: border-box;
 }
+
 @font-face {
   font-family: heading;
   src: url(Lobster-Regular.ttf);
@@ -16,6 +17,7 @@
   background: linear-gradient(#615dad 50%, #ffc8da);
   background-attachment: fixed;
 }
+
 .content {
   display: flex;
   flex-direction: column;
@@ -24,20 +26,15 @@
   width: 40%;
   background-color: #283e50;
 }
-.content--image {
-  width: 20px;
+
+.content--image img {
+  max-width: 100%;
 }
+
 .content--text {
   text-align: center;
   color: #ffffff;
   padding: 0 30px 30px;
-}
-h1 {
-  font-family: heading;
-  font-size: 40px;
-}
-p {
-  font-family: Arial, Helvetica, sans-serif;
 }
 
 .content--buttons {
@@ -46,6 +43,7 @@ p {
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
 }
+
 .content--button__green {
   padding: 20px 0;
   margin-top: 2px;
@@ -65,6 +63,16 @@ p {
   color: #ffffff;
   text-decoration: none;
 }
+
 .content--button__blue:hover {
   background-color: #0090e9;
+}
+
+h1 {
+  font-family: heading;
+  font-size: 40px;
+}
+
+p {
+  font-family: Arial, Helvetica, sans-serif;
 }
