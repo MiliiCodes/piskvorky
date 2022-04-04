@@ -20,7 +20,7 @@
 .content {
   display: flex;
   flex-direction: column;
-  max-width: 400px;
+  width: 400px;
   background-color: #283e50;
   border-radius: 10px 10px 0 0;
   margin-top: 30px;
@@ -28,7 +28,6 @@
 }
 
 .content--image img {
-  max-width: 100%;
   border-radius: 10px 10px 0 0;
 }
 
@@ -37,6 +36,18 @@
   color: #ffffff;
   padding: 0 30px 30px;
   flex-basis: 250px;
+}
+
+.content--rules {
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+.content--rule {
+  display: flex;
+  justify-content: center;
+  width: 100%;
 }
 
 .content--buttons {
@@ -78,4 +89,23 @@ h1 {
 
 p {
   font-family: Arial, Helvetica, sans-serif;
+}
+
+li {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: left;
+}
+
+img {
+  width: 100%;
+}
+
+figure {
+  width: 90%;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #ffffff;
+}
+
+figcaption {
+  padding: 10px 0;
 }
