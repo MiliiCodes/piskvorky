@@ -81,6 +81,12 @@ align-items: center;
   background-color: #0090e9;
 }
 
+.icons {
+  width: 1em;
+  height: 1em;
+  filter: invert();
+}
+
 h1 {
   font-family: heading;
   font-size: 40px;
