@@ -119,7 +119,7 @@ figcaption {
 }
 
 @media (min-width: 768px) {
-  .content {
+  .content__wide {
     width: 600px;
   }
   .content--rules {
@@ -135,7 +135,7 @@ figcaption {
 }
 
 @media (min-width: 992px) {
-  .content {
+  .content__wide {
     width: 800px;
   }
   .content--rules {
