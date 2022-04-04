@@ -136,7 +136,7 @@ figcaption {
 
 @media (min-width: 992px) {
   .content__wide {
-    width: 800px;
+    width: 500px;
   }
   .content--rules {
     flex-direction: row;
@@ -146,6 +146,6 @@ figcaption {
   }
   figure {
     height: 100%;
-    min-height: 438px;
+    min-height: 339px;
   }
 }
