@@ -41,6 +41,7 @@
 .content--rules {
 display: flex;
 flex-direction: column;
+flex-wrap: wrap;
 align-items: center;
 }
 
@@ -114,4 +115,36 @@ figure {
 
 figcaption {
   padding: 10px 0;
+}
+
+@media (min-width: 768px) {
+  .content {
+    width: 600px;
+  }
+  .content--rules {
+    flex-direction: row;
+  }
+  .content--rule {
+    width: 50%;
+  }
+  figure {
+    height: 100%;
+    min-height: 366px;
+  }
+}
+
+@media (min-width: 992px) {
+  .content {
+    width: 800px;
+  }
+  .content--rules {
+    flex-direction: row;
+  }
+  .content--rule {
+    width: 50%;
+  }
+  figure {
+    height: 100%;
+    min-height: 438px;
+  }
 }
