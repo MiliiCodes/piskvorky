@@ -25,6 +25,7 @@
   border-radius: 10px 10px 0 0;
   margin-top: 30px;
   margin-bottom: 50px;
+  color: #ffffff;
 }
 
 .content--image img {
@@ -33,7 +34,6 @@
 
 .content--text {
   text-align: center;
-  color: #ffffff;
   padding: 0 30px 30px;
   flex-basis: 250px;
 }
@@ -88,10 +88,38 @@ align-items: center;
   filter: invert();
 }
 
+.game {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 250px;
+  background-color: transparent;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  color: #ffffff;
+}
+
+.game--header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.game--buttons {
+  display: flex;
+  justify-content: right;
+}
+
+.game--array {
+width: 100%;
+}
+
+
 h1 {
   font-family: heading;
   font-size: 40px;
   padding: 30px 0;
+  text-align: center;
 }
 
 p {
