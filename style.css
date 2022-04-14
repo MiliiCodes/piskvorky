@@ -102,7 +102,10 @@ align-items: center;
 .game--header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   width: 100%;
+  font-size: 20px;
+  margin-bottom: 20px;
 }
 
 .game--buttons {
@@ -120,6 +123,31 @@ width: 100%;
 
 .game--fields:nth-child(10) > button {
   border-bottom: 2px solid #000000;
+}
+
+.game--button__green {
+  padding: 10px;
+  margin-right: 5px;
+  background-color: #1fcca4;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.game--button__green:hover {
+  background-color: #1cbb96;
+}
+
+.game--button__blue {
+  padding: 10px;
+  background-color: #0197f6;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.game--button__blue:hover {
+  background-color: #0090e9;
 }
 
 
