@@ -116,7 +116,10 @@ width: 100%;
 
 .game--fields > button:nth-child(1) {
   border-left: 2px solid #000000;
-  padding: 3px 8.6px;
+}
+
+.game--fields:nth-child(10) > button {
+  border-bottom: 2px solid #000000;
 }
 
 
@@ -152,12 +155,13 @@ figcaption {
 }
 
 button {
-  margin: -2px;
+  margin: 0 -2px;
   padding: 3px 9.6px;
   border-right: 2px solid #000000;
   border-left: 0;
   border-top: 2px solid #000000;
-  border-bottom: 2px solid #000000;
+  opacity: 0.4;
+  border-bottom: 0;
 }
 
 @media (min-width: 768px) {
