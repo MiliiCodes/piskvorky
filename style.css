@@ -20,7 +20,8 @@
 .content {
   display: flex;
   flex-direction: column;
-  width: 400px;
+  width: 60%;
+  min-width: 400px;
   background-color: #283e50;
   border-radius: 10px 10px 0 0;
   margin-top: 30px;
@@ -43,6 +44,7 @@ display: flex;
 flex-direction: column;
 flex-wrap: wrap;
 align-items: center;
+justify-content: center
 }
 
 .content--rule {
@@ -210,33 +212,28 @@ button:focus {
 }
 
 @media (min-width: 768px) {
-  .content__wide {
-    width: 600px;
+  .content {
+    width: 60%;
   }
   .content--rules {
     flex-direction: row;
+    align-items: flex-start;
   }
   .content--rule {
     width: 50%;
-  }
-  figure {
-    height: 100%;
-    min-height: 366px;
   }
 }
 
 @media (min-width: 992px) {
-  .content__wide {
-    width: 500px;
+  .content {
+    width: 80%;
+    max-width: 700px;
   }
   .content--rules {
     flex-direction: row;
+    align-items: flex-start;
   }
   .content--rule {
     width: 50%;
-  }
-  figure {
-    height: 100%;
-    min-height: 339px;
   }
 }
