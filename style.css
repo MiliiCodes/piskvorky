@@ -192,6 +192,11 @@ button {
   border-bottom: 0;
 }
 
+button:hover {
+  cursor: pointer;
+  opacity: 0.6;
+}
+
 @media (min-width: 768px) {
   .content__wide {
     width: 600px;
