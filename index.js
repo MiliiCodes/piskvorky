@@ -6,13 +6,15 @@ let player = "circle"
 
 const fillButton = (event) => {
     event.target.classList.add(`game__fields--${player}`)
+    event.target.disabled = true
     if (player === "circle") {
         player = "cross"
     } else {
         player = "circle"
     }
-    document.querySelector("#player").src = `assets/${player}.svg`
-}
+
+    document.querySelector("#player").src = `assets/${player}.svg`}
+
 
 
 //nastavujem funkciu, ktorá spustí pri kliknutí na tlačítko funkciu nastavenú vyššie
