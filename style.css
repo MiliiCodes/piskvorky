@@ -201,6 +201,38 @@ figcaption {
   padding: 0 0 10%;
 }
 
+.game__fields--circle {
+  margin: 0 -2px;
+  border-right: 2px solid #000000;
+  border-left: 0;
+  border-top: 2px solid #000000;
+  opacity: 0.4;
+  border-bottom: 0;
+  position: relative;
+  width: 10%;
+  height: 0;
+  padding: 0 0 10%;
+  background-image: url("assets/circle.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.game__fields--cross {
+  margin: 0 -2px;
+  border-right: 2px solid #000000;
+  border-left: 0;
+  border-top: 2px solid #000000;
+  opacity: 0.4;
+  border-bottom: 0;
+  position: relative;
+  width: 10%;
+  height: 0;
+  padding: 0 0 10%;
+  background-image: url("assets/cross.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 button:hover {
   cursor: pointer;
   opacity: 0.6;
