@@ -206,7 +206,7 @@ figcaption {
   border-right: 2px solid #000000;
   border-left: 0;
   border-top: 2px solid #000000;
-  opacity: 0.4;
+  opacity: 1;
   border-bottom: 0;
   position: relative;
   width: 10%;
@@ -215,6 +215,7 @@ figcaption {
   background-image: url("assets/circle.svg");
   background-repeat: no-repeat;
   background-position: center;
+  border-radius: 3px;
 }
 
 .game__fields--cross {
@@ -222,7 +223,7 @@ figcaption {
   border-right: 2px solid #000000;
   border-left: 0;
   border-top: 2px solid #000000;
-  opacity: 0.4;
+  opacity: 1;
   border-bottom: 0;
   position: relative;
   width: 10%;
@@ -231,6 +232,7 @@ figcaption {
   background-image: url("assets/cross.svg");
   background-repeat: no-repeat;
   background-position: center;
+  border-radius: 3px;
 }
 
 button:hover {
