@@ -24,3 +24,11 @@ for (let i = 0; i < clickedButton.length; i += 1) {
     clickedButton[i].addEventListener("click", fillButton)
 }
 
+const getSymbol = (field) => {
+    if (field.classList.contains("game__fields--cross")) {
+        return "cross"
+    } else if (field.classList.contains("game__fields--circle")) {
+        return "circle"
+    }
+}
+
