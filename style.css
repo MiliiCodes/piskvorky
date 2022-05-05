@@ -123,11 +123,11 @@ min-width: 250px;
 }
 
 
-.game__fields > button:nth-child(1) {
+.game__field > button:nth-child(1) {
   border-left: 2px solid #000000;
 }
 
-.game__fields:nth-child(10) > button {
+.game__field:nth-child(10) > button {
   border-bottom: 2px solid #000000;
 }
 
@@ -188,7 +188,7 @@ figcaption {
   text-align: center;
 }
 
-.game__fields--empty {
+.game__field {
   margin: 0 -2px;
   border-right: 2px solid #000000;
   border-left: 0;
@@ -202,7 +202,7 @@ figcaption {
 }
 
 
-.game__fields--circle {
+.game__field--circle {
   margin: 0 -2px;
   border-right: 2px solid #000000;
   border-left: 0;
@@ -219,7 +219,7 @@ figcaption {
   border-radius: 3px;
 }
 
-.game__fields--cross {
+.game__field--cross {
   margin: 0 -2px;
   border-right: 2px solid #000000;
   border-left: 0;
