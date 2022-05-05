@@ -46,7 +46,6 @@ const getField = (row, column) => {
    return clickedButton[row * boardSize + column]
 }
 
-console.log(getField(1, 3));
 
 const getPosition = (field) => {
 	let fieldIndex = 0
@@ -60,7 +59,6 @@ const getPosition = (field) => {
 	}
 }
 
-console.log(getPosition(1, 3));
 
 
 const symbolsToWin = 5
@@ -113,6 +111,64 @@ const isWinningMove = (field) => {
 	if (inColumn >= symbolsToWin) {
 		return true
 	}
+
+
+    let c
+    let inDiagonalRight = 1
+
+	// Koukni doleva nahoru
+	i = origin.row
+    c = origin.column
+	while (i > 0 && c > 0 && symbol === getSymbol(getField(i - 1, c - 1))) {
+		inDiagonalRight++
+		i--
+        c--
+	}
+
+	// Koukni doprava dolu
+	i = origin.row
+    c = origin.column
+	while (
+		i < boardSize - 1 && c < boardSize - 1 &&
+		symbol === getSymbol(getField(i + 1, c + 1))
+	) {
+		inDiagonalRight++
+		i++
+        c++
+	}
+
+	if (inDiagonalRight >= symbolsToWin) {
+		return true
+	}
+
+    let inDiagonalLeft = 1
+    
+    // Koukni doleva dolu
+	i = origin.row
+    c = origin.column
+	while (i < boardSize - 1 && c > 0 && symbol === getSymbol(getField(i + 1, c - 1))) {
+		inDiagonalLeft++
+		i++
+        c--
+	}
+
+	// Koukni doprava nahoru
+	i = origin.row
+    c = origin.column
+	while (
+		i > 0 && c < boardSize - 1 &&
+		symbol === getSymbol(getField(i - 1, c + 1))
+	) {
+		inDiagonalLeft++
+		i--
+        c++
+	}
+
+	if (inDiagonalLeft >= symbolsToWin) {
+		return true
+	}
+
+
 
 	return false
 }
