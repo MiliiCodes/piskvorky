@@ -123,11 +123,11 @@ min-width: 250px;
 }
 
 
-.game__field > button:nth-child(1) {
+.game__fields > button:nth-child(1) {
   border-left: 2px solid #000000;
 }
 
-.game__field:nth-child(10) > button {
+.game__fields:nth-child(10) > button {
   border-bottom: 2px solid #000000;
 }
 
@@ -217,6 +217,10 @@ figcaption {
   background-repeat: no-repeat;
   background-position: center;
   border-radius: 3px;
+  background-size: 75%;
+  animation-name: popin;
+  animation-duration: 0.25s;
+  animation-timing-function: ease-in;
 }
 
 .game__field--cross {
@@ -234,6 +238,10 @@ figcaption {
   background-repeat: no-repeat;
   background-position: center;
   border-radius: 3px;
+  background-size: 75%;
+  animation-name: popin;
+  animation-duration: 0.25s;
+  animation-timing-function: ease-in;
 }
 
 button:hover {
@@ -245,6 +253,19 @@ button:focus {
   cursor: pointer;
   opacity: 0.6;
 }
+
+@keyframes popin {
+  from {
+    background-size: 10%;
+  }
+  50% {
+    background-size: 50%;
+  }
+  to {
+    background-size: 75%;
+  }
+}
+
 
 @media (min-width: 768px) {
   .content {
